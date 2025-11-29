@@ -1,0 +1,82 @@
+
+h1
+ {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: #6c1c1c;
+    font-size: xx-large;
+}
+
+h5 {
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+
+}
+
+body {
+    color: #183e6b;
+    background-color: #bfbfbf;
+}
+
+p {
+    text-align: left;
+    font-size: large;
+}
+
+#p1 {
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+ul {list-style-type: none;
+border: 5px black solid;
+background-color: #6c1c1c;
+text-align: center;
+}
+
+li{
+    display: inline;
+    color: aqua;
+    padding-left: 215px;
+
+}
+
+/* Gambar */
+.container img {
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Video */
+.container iframe {
+    width: 350px;
+    height: 200px;
+}
+
+/* RESPONSIVE – untuk HP */
+@media (max-width: 600px) {
+    .container {
+        gap: 8px;
+    }
+
+    .container img {
+        width: 28vw;    /* 28% dari layar */
+        max-width: 110px;
+    }
+
+    .container iframe {
+        width: 60vw;    /* 60% dari layar */
+        height: 160px;
+    }
+
+}
