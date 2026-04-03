@@ -51,7 +51,21 @@ nav {
     color: white;
 }
 
+.nav-links a.active {
+    color: white;
+    font-weight: 600;
+    position: relative;
+}
 
+.nav-links a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ff4655;
+}
 
 .iframe-container {
     height: calc(100vh - 85px);
