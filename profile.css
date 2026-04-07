@@ -1,0 +1,23 @@
+/* Embedded Profile Frame */
+.iframe-container {
+    min-height: calc(100vh - 85px);
+    height: calc(100vh - 85px);
+    min-height: calc(100dvh - 85px);
+    height: calc(100dvh - 85px);
+}
+
+.canva-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .iframe-container {
+        min-height: calc(100vh - 120px);
+        height: calc(100vh - 120px);
+        min-height: calc(100dvh - 120px);
+        height: calc(100dvh - 120px);
+    }
+}
