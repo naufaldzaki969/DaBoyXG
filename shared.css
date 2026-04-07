@@ -80,7 +80,7 @@ nav {
     position: relative;
     text-decoration: none;
     color: var(--text-secondary);
-    font-size: 14px;
+    font-size: 15px;
     transition: color 0.3s ease;
 }
 
@@ -131,6 +131,6 @@ nav {
     }
 
     .nav-links a {
-        font-size: 13px;
+        font-size: 14px;
     }
 }
