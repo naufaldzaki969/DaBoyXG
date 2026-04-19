@@ -335,7 +335,7 @@ function renderHistory() {
     if (history.length === 0) {
         historyList.innerHTML = `
             <div class="history-empty">
-                Belum ada riwayat kalkulasi. Setelah kamu menekan "Hitung Sekarang", hasil terbaru akan muncul di sini dan juga di Quick Overview halaman home.
+                Belum ada riwayat kalkulasi. Setelah kamu menekan "Hitung Sekarang", hasil terbaru akan muncul di sini agar bisa kamu cek lagi kapan pun dibutuhkan.
             </div>
         `;
         return;
