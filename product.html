@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product - GradeScope</title>
+<link rel="icon" type="image/png" href="favicon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <a class="brand brand-logo" href="index.html" aria-label="GradeScope index">
+        <img src="gradescope-logo.png" alt="GradeScope logo">
+    </a>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#" class="active">Product</a>
+        <a href="design-process.html">About Product</a>
+    </div>
+</nav>
+
+<div class="wrapper">
+
+    <main class="card">
+        <!-- Header -->
+        <header class="card-header">
+            <h1>Grade Strategy Calculator</h1>
+            <p class="subtitle">Analisis nilai kamu secara logis dan strategis.</p>
+            <p class="helper-text">Masukkan nilai mapel dari semester-semester sebelumnya. Sistem akan membaca rata-rata tiap semester, trend performa, dan mapel yang paling perlu kamu prioritaskan.</p>
+        </header>
+
+        <!-- Semester Input -->
+        <section class="section">
+            <h2 class="section-title">Semester Data</h2>
+            <p class="section-note">Minimal 1 semester, maksimal 5 semester. Isi Matematika, IPA, IPS, Informatika, Bahasa Indonesia, Bahasa Inggris, dan Pendidikan Agama.</p>
+            <div id="semester-container" class="semester-container"></div>
+
+            <div class="action-row">
+                <button type="button" class="add-btn" id="add-semester-btn">+ Tambah Semester</button>
+                <button type="button" id="calculate-btn">Hitung Sekarang</button>
+            </div>
+        </section>
+
+        <!-- Calculation Result -->
+        <section class="result" id="output" aria-live="polite"></section>
+
+        <!-- History -->
+        <section class="history-panel">
+            <div class="history-header">
+                <div>
+                    <h2 class="section-title">Riwayat Kalkulasi</h2>
+                    <p class="section-note">Riwayat tersimpan di browser ini supaya hasil kalkulasimu tetap bisa dibaca lagi saat dibutuhkan.</p>
+                </div>
+                <button type="button" class="clear-history-btn" id="clear-history-btn">Hapus Riwayat</button>
+            </div>
+
+            <div id="history-list" class="history-list"></div>
+        </section>
+    </main>
+
+</div>
+
+<!-- Scripts -->
+<script src="history-store.js"></script>
+<script src="product.js"></script>
+
+</body>
+</html>
