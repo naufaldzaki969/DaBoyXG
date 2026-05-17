@@ -109,12 +109,6 @@ body {
     background: #e03b49;
 }
 
-.hero-button.secondary {
-    border-color: rgba(255, 255, 255, 0.14);
-    color: white;
-    background: rgba(255, 255, 255, 0.04);
-}
-
 .hero-card-link {
     display: block;
     color: inherit;
