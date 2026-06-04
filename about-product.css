@@ -109,6 +109,17 @@ body {
     background: #e03b49;
 }
 
+.hero-button.secondary {
+    border-color: rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+}
+
+.hero-button.secondary:hover {
+    border-color: rgba(255, 255, 255, 0.24);
+    background: rgba(255, 255, 255, 0.09);
+}
+
 .hero-card-link {
     display: block;
     color: inherit;
@@ -279,15 +290,6 @@ body {
         padding-bottom: 48px;
     }
 
-    .hero-actions {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .hero-button {
-        width: 100%;
-    }
-
     .cta-card {
         flex-direction: column;
         align-items: flex-start;
@@ -299,6 +301,17 @@ body {
 
     .canva-iframe {
         min-height: 580px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-button {
+        width: 100%;
     }
 }
 

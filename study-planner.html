@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study Plan Generator - GradeScope</title>
+<link rel="icon" type="image/png" href="favicon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="study-planner.css">
+</head>
+
+<body>
+
+<nav>
+    <a class="brand brand-logo" href="index.html" aria-label="GradeScope home">
+        <img src="gradescope-logo.png" alt="GradeScope logo">
+    </a>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about-product.html">About Product</a>
+        <a href="design-process.html">Design Process</a>
+    </div>
+</nav>
+
+<main class="planner-page">
+    <div class="planner-shell">
+        <section class="planner-card">
+            <header class="planner-header">
+                <p class="planner-eyebrow">Mini Product</p>
+                <h1>Study Plan Generator</h1>
+                <p>
+                    Setelah GradeScope membaca target nilai, mini product ini membantu menyusun rencana
+                    belajar harian yang lebih konkret berdasarkan gap nilai, waktu tersedia, dan mapel prioritas.
+                </p>
+            </header>
+
+            <form class="planner-form" id="planner-form">
+                <div class="form-grid">
+                    <div class="field-group">
+                        <label for="current-average">Rata-rata Sekarang</label>
+                        <input id="current-average" name="current_average" type="number" min="0" max="100" step="0.01" value="78" required>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="target-average">Target Rata-rata</label>
+                        <input id="target-average" name="target_average" type="number" min="0" max="100" step="0.01" value="85" required>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="days-left">Hari Sampai Target</label>
+                        <input id="days-left" name="days_left" type="number" min="1" max="180" step="1" value="30" required>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="study-hours">Jam Belajar per Hari</label>
+                        <input id="study-hours" name="study_hours" type="number" min="0.25" max="8" step="0.25" value="1.5" required>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="priority-subject">Mapel Prioritas</label>
+                        <input id="priority-subject" name="priority_subject" type="text" maxlength="48" value="Matematika" required>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="difficulty">Mode Belajar</label>
+                        <select id="difficulty" name="difficulty">
+                            <option value="light">Ringan</option>
+                            <option value="normal" selected>Normal</option>
+                            <option value="intense">Intensif</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="planner-actions">
+                    <button class="planner-button" type="submit">Generate Plan</button>
+                    <a class="back-link" href="about-product.html">Back to About Product</a>
+                </div>
+            </form>
+
+            <section id="planner-output" aria-live="polite">
+                <div class="planner-empty">
+                    Isi data target kamu, lalu tekan Generate Plan. Sistem akan menghitung ritme belajar harian,
+                    prioritas sesi, dan checkpoint nilai yang perlu dicapai.
+                </div>
+            </section>
+        </section>
+    </div>
+</main>
+
+<script src="study-planner.js"></script>
+
+</body>
+</html>

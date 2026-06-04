@@ -1,0 +1,268 @@
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top left, rgba(255, 70, 85, 0.14), transparent 28%),
+        linear-gradient(135deg, #131722, #0f172a);
+}
+
+.planner-page {
+    padding: clamp(24px, 4vw, 50px) clamp(16px, 3vw, 20px) 70px;
+}
+
+.planner-shell {
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.planner-card {
+    padding: clamp(24px, 4vw, 42px);
+    border-radius: 24px;
+    background: linear-gradient(180deg, #ffffff, #f8fafc);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.28);
+}
+
+.planner-header {
+    max-width: 760px;
+    margin-bottom: 30px;
+}
+
+.planner-eyebrow {
+    margin-bottom: 12px;
+    color: #ff4655;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.planner-header h1,
+.metric-card strong {
+    font-family: var(--font-display);
+}
+
+.planner-header h1 {
+    margin-bottom: 10px;
+    color: #0f172a;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.planner-header p {
+    color: #475569;
+    line-height: 1.7;
+}
+
+.planner-form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.field-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #334155;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.field-group input,
+.field-group select {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    background: #f8fafc;
+    color: #0f172a;
+    font: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.field-group input:focus,
+.field-group select:focus {
+    outline: none;
+    border-color: #ff4655;
+    box-shadow: 0 0 0 3px rgba(255, 70, 85, 0.12);
+}
+
+.planner-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.planner-button,
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 18px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.planner-button {
+    background: #ff4655;
+    color: #ffffff;
+}
+
+.planner-button:hover,
+.back-link:hover {
+    transform: translateY(-1px);
+}
+
+.planner-button:hover {
+    background: #e03b49;
+}
+
+.back-link {
+    background: #e2e8f0;
+    color: #0f172a;
+}
+
+.back-link:hover {
+    background: #cbd5e1;
+}
+
+.planner-result {
+    margin-top: 30px;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.metric-card {
+    padding: 18px;
+    border-radius: 16px;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+.metric-card span {
+    display: block;
+    margin-bottom: 8px;
+    color: #94a3b8;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.metric-card strong {
+    display: block;
+    color: #ffffff;
+    font-size: 2.1rem;
+    line-height: 1;
+}
+
+.metric-card p {
+    margin-top: 8px;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.plan-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.9fr);
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.plan-panel {
+    padding: 22px;
+    border: 1px solid #dbe2ea;
+    border-radius: 18px;
+    background: #ffffff;
+}
+
+.plan-panel h2 {
+    margin-bottom: 14px;
+    color: #334155;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.plan-list,
+.checkpoint-list {
+    display: grid;
+    gap: 12px;
+}
+
+.plan-item,
+.checkpoint-item {
+    padding: 14px;
+    border-radius: 14px;
+    background: #f8fafc;
+}
+
+.plan-item span,
+.checkpoint-item span {
+    display: block;
+    margin-bottom: 6px;
+    color: #64748b;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.plan-item strong,
+.checkpoint-item strong {
+    color: #0f172a;
+}
+
+.plan-item p,
+.checkpoint-item p,
+.planner-empty {
+    color: #64748b;
+    line-height: 1.7;
+}
+
+.planner-empty {
+    margin-top: 24px;
+    padding: 18px;
+    border: 1px dashed #cbd5e1;
+    border-radius: 16px;
+    background: #f8fafc;
+}
+
+@media (max-width: 900px) {
+    .form-grid,
+    .result-grid,
+    .plan-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .planner-card {
+        border-radius: 20px;
+    }
+
+    .planner-actions {
+        flex-direction: column;
+    }
+
+    .planner-button,
+    .back-link {
+        width: 100%;
+    }
+}
